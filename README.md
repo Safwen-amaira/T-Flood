@@ -2,6 +2,9 @@
 
 T-flood is an advanced, modular **Distributed Denial of Service (DDoS) simulation tool** designed for cybersecurity professionals, Red Teams, and network administrators. It allows controlled and ethical stress testing of your own infrastructure to evaluate resilience against volumetric and protocol-based attacks.
 
+  <img width="692" height="632" alt="image" src="https://github.com/user-attachments/assets/cfd95394-a7a8-46b2-8c91-7967c8986169" />
+
+
 ---
 
 ## ⚠️ Legal Disclaimer & Responsible Use
