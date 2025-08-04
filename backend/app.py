@@ -89,7 +89,7 @@ QGroupBox::title {
         layout.setContentsMargins(20, 20, 20, 20)
         layout.setSpacing(20)
 
-        # GroupBox: Simulation Settings
+        # GroupBox: Attack Settings
         sim_group = QGroupBox("Attack Settings")
         form = QFormLayout()
 
@@ -98,8 +98,8 @@ QGroupBox::title {
         form.addRow("Target:", self.target_input)
 
         self.sim_type = QComboBox()
-        self.sim_type.addItems(["HTTP Load", "SYN Simulation", "UDP Load"])
-        form.addRow("Simulation Type:", self.sim_type)
+        self.sim_type.addItems(["HTTP Load", "SYN Flooding", "UDP Load"])
+        form.addRow("Flooding Type:", self.sim_type)
 
         self.threads = QSpinBox()
         self.threads.setRange(1, 10000)
