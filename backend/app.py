@@ -117,7 +117,7 @@ QGroupBox::title {
         # Buttons
         button_layout = QHBoxLayout()
 
-        self.start_btn = QPushButton("Attack")
+        self.start_btn = QPushButton("Flood")
         self.start_btn.setObjectName("startBtn")
         self._style_button(self.start_btn, "#1e90ff")
         self.start_btn.clicked.connect(self.start_simulation)
@@ -185,14 +185,14 @@ QGroupBox::title {
             QMessageBox.warning(self, "Input Error", "Please enter a valid target.")
             return
 
-        self.logs.append(f"[+] Simulation started on {target} using {self.sim_type.currentText()} for {self.duration.value()} seconds.")
+        self.logs.append(f"[+] Flooding started on {target} using {self.sim_type.currentText()} for {self.duration.value()} seconds.")
         self.simulation_running = True
         self.start_btn.setEnabled(False)
         self.stop_btn.setEnabled(True)
 
     def stop_simulation(self):
         if self.simulation_running:
-            self.logs.append("[-] Simulation stopped.")
+            self.logs.append("[-] Flooding stopped.")
             self.simulation_running = False
             self.start_btn.setEnabled(True)
             self.stop_btn.setEnabled(False)
